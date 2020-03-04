@@ -1,0 +1,205 @@
+    1  pwd
+    2  ls
+    3  ls -l
+    4  ls -l
+    5  ls -l
+    6  cd "C:\Users\Phrankie Garcia\Documents"
+    7  mkdir "cursoBD"
+    8  ls
+    9  cd cursoBD/
+   10  mkdir "proyecto_uno"
+   11  mkdir "proyecto_dos"
+   12  ls
+   13  touch "holaBedu.txt"
+   14  cat holaBedu.txt
+   15  cat holaBedu.txt holaBedu.txt
+   16  cat holaBedu.txt " " holaBedu.txt
+   17  mv holaBedu.txt proyecto_uno
+   18  mv proyecto_uno/holaBedu.txt proyecto_dos
+   19  cd proyecto_dos/
+   20  mv holaBedu.txt adiosBedu.txt
+   21  cp adiosBedu.txt holaBedu.txt
+   22  ls
+   23  cat adiosBedu.txt holaBedu.txt
+   24  mv holaBedu.txt ../proyecto_uno
+   25  man curl
+   26  man "curl"
+   27  curl "URL_PATH" > "path_archivo_descarga.txt"
+   28  unzip "C:\Users\Phrankie Garcia\Documents" > "C:\Users\Phrankie Garcia\Documents"
+   29  unzip "C:\Users\Phrankie Garcia\Documents" > "C:\Users\Phrankie Garcia\Documents"
+   30  unzip "C:\Users\Phrankie Garcia\Documents\ArchivosGenerados_020120.zip" > "C:\Users\Phrankie Garcia\Documents"
+   31  unzip "C:\Users\Phrankie Garcia\Documents\ArchivosGenerados_020120.zip" > "C:\Users\Phrankie Garcia\Documents\prueba_unzip"
+   32  curl "https://nu4itautomation.com/P&G/ArchivosGenerados_270280.zip" > "C:\Users\Phrankie Garcia\Documents"
+   33  ls
+   34  cd..
+   35  cd ..
+   36  mkdir Sesion02
+   37  ls
+   38  cd Sesion02
+   39  curl "http://files.grouplens.org/datasets/movielens/ml-1m.zip" > "C:\Users\Phrankie Garcia\Documents\cursoBD\Sesion02\ml-1M.zip"
+   40  ls
+   41  unzip ml-1M.zip
+   42  cd ml-1m
+   43  less README
+   44  lesss README
+   45  less README
+   46  ls
+   47  head user.dat
+   48  head users.dat
+   49  head -n 5 user.dat
+   50  head -n 5 users.dat
+   51  tail -n 20 users.dat
+   52  sed "s/::/,/g" users.dat
+   53  sed "s/::/,/g" users.dat > users.csv
+   54  head users.csv
+   55  wc users.dat
+   56  wc users.csv
+   57  ls
+   58  head users.csv
+   59  echo userid,movieid,ratings,time | cat - users.csv > users-h.csv
+   60  head users-h.csv
+   61  ls
+   62  history
+   63  ls
+   64  head movies.dat
+   65  echo idmovie::name_movie::class | cat - movies.dat | sed "s/::/,/g" - > movies_h.csv
+   66  head ratings.dat
+   67  echo userid::movieid::ratings::time_stamp | cat - ratings.dat | sed "s/::/,/g" - > ratings_h.csv
+   68  head ratings_h.csv
+   69  head movies_h.csv
+   70  grep 18 users.dat
+   71  grep 18 users.dat | head
+   72  grep 18 users.csv | head
+   73  grep 18 users.csv | head -
+   74  grep 18 users.csv | head - -n 20
+   75  grep ,18, users.csv
+   76  grep ,18,*, users.csv
+   77  grep ,18,[0-1]{1}, users.csv
+   78  grep ,18,\[0-1]{1}, users.csv
+   79  grep ,18,*[0-1]{1}, users.csv
+   80  grep ,18,/[0-1]{1}, users.csv
+   81  grep ,18,[0-1]{1}, users.csv
+   82  grep ,18,?, users.csv
+   83  grep ,18,+, users.csv
+   84  grep --color ,18, users.csv
+   85  grep --color ",18,[0-9]?" users.csv
+   86  grep --color ",18,.[0-9]?" users.csv
+   87  grep --color ",18,.[0-9]?,.*" users.csv
+   88  grep --color "18,.*,.*" users.csv
+   89  grep --color ",18,.*,.*" users.csv
+   90  grep --color ",18,.[0-9]?,.*" users.csv
+   91  grep --color ",18,.[0-9]{1},.*" users.csv
+   92  grep --color  -E ",18,.[0-9]{1},.*" users.csv
+   93  grep --color  -E ",18,[0-9]{1},*" users.csv
+   94  grep --color  -E ",18,[0-9]{1}," users.csv
+   95  grep --color  -E ",18,[0-9]{1},[1-9]{5}" users.csv
+   96  grep --color  -E ",18,[0-9]{1},[1-9]{5}$" users.csv
+   97  grep --color Action movies.csv
+   98  grep --color Action movies_h.csv
+   99  grep --color -E ",Action|" movies_h.csv
+  100  grep --color -E ",Action |" movies_h.csv
+  101  grep --color -E "Action" movies_h.csv
+  102  grep --color -E ",Action" movies_h.csv
+  103  grep --color -E ",Action\|" movies_h.csv
+  104  grep --color -E ",Action\||,Action$" movies_h.csv
+  105  grep --color -E "Romance" movies_h.csv
+  106  grep --color -E "[0-9]{4},[\w]*Romance" movies_h.csv
+  107  grep --color -E "[0-9]{4},[\w]{1,}Romance" movies_h.csv
+  108  grep --color -E "[0-9]{4},Romance" movies_h.csv
+  109  grep --color -E "^[0-9]{4},Romance" movies_h.csv
+  110  grep --color -E "^[0-9]{4},[\w]*Romance" movies_h.csv
+  111  grep --color -E "^Romance" movies_h.csv
+  112  grep --color -E "^[0-9]{4},Romance" movies_h.csv
+  113  grep --color -E "^[0-9]{4},*Romance*,*|Romance" movies_h.csv
+  114  grep --color -E "^[3]" movies_h.csv
+  115  grep --color -E "*\|Comedy" movies_h.csv
+  116  grep --color -E "*\|Comedy" movies_h.csv >movies_comedias.csv
+  117  wc movies_comedias.csv
+  118  grep --color -E "*(2000)*" movies_h.csv >movies_comedias.csv
+  119  grep --color -E "*Comedy*" movies_h.csv >movies_comedias.csv
+  120  grep --color -E "*,Comedy|\|Comedy" movies_h.csv
+  121  grep --color -E "*,Comedy|\|Comedy" movies_h.csv > movies_comedia.cvs
+  122  wc movies_comedia.cvs
+  123  grep --color -E "(2000)," movies_h.csv > movies_comedia.cvs
+  124  grep --color -E "*(2000),*" movies_h.csv > movies.csv
+  125  grep --color -E "*,*(2000),*" movies_h.csv > movies.csv
+  126  wc movies.csv
+  127  grep --color -E "*::*(2000)::*" movies.dat
+  128  grep --color "(2000)" movies.dat
+  129  grep --color "(2000)" movies.dat > movies_2000.dat
+  130  wc movies_2000.dat
+  131  grep --color "Toy" movies.dat
+  132  grep --color "Toy Story" movies.dat
+  133  grep --color -E "*,(1|3114)*" movies.dat
+  134  grep --color -E "*::(1|3114)*" movies.dat
+  135  grep --color -E "*::(1|3114)::*" movies.dat
+  136  grep --color -E "::(1|3114)::.*" movies.dat
+  137  grep --color -E "::(1|3114)::.*," movies.dat
+  138  grep --color -E "::(1|3114)::.*::" movies.dat
+  139  grep --color -E "\::(1|3114)\::.*\::" movies.dat
+  140  grep --color -E "\:\:(1|3114)\:\:.*\:\:" movies.dat
+  141  sed "s/::/,/g" movies.dat > movies_prueba.csv
+  142  grep --color -E ",(1|3114),.*," movies_prueba.csv
+  143  head movies.csv
+  144  grep --color -E ",(1|3114),.*," ratings.csv
+  145  ls
+  146  grep --color -E ",(1|3114),.*," ratings_h.csv
+  147  grep --color -E ",(1|3114),.*," ratings_h.csv | wc
+  148  grep  --color .*,.*,5 ratings_h.csv | grep
+  149  wc movies_prueba.cvs
+  150  wc movies_prueba.csv
+  151  wc movies.dat
+  152  grep --color Deep movies_prueba.csv
+  153  grep --color -E ".*,(1762|1876|2546|2670|2722|2812),(4|5),.* ratings.csv
+  154  grep --color -E ".*,(1762|1876|2546|2670|2722|2812),(4|5),.* ratings.csv
+  155  grep --color -E ".*,(1762|1876|2546|2670|2722|2812),(4|5),.*" ratings.csv
+  156  ls
+  157  grep --color -E ".*,(1762|1876|2546|2670|2722|2812),(4|5),.*" ratings_h.csv
+  158  grep --color -E "[0-9]{4},(1762|1876|2546|2670|2722|2812),(4|5),.*" ratings_h.csv
+  159  grep --color -E "[0-9]{4},(1762|1876|2546|2670|2722|2812),(4|5),.*" ratings_h.csv > cinco_cuatro.csv
+  160  wc cinco_cuatro.csv
+  161  grep --color Deep movies_prueba.csv
+  162  grep --color -E "[0-9]{4},(1762|1876|2546|2670|2722|2812),(4|5),.*" ratings_h.csv > cinco_cuatro.csv
+  163  wc cinco_cuatro.csv
+  164  head rating_csv
+  165  head ratings_h.csv
+  166  grep --color -E ".*,(1762|1876|2546|2670|2722|2812),(4|5),.*" ratings_h.csv > cinco_cuatro.csv
+  167  wc cinco_cuatro.csv
+  168  grep --color -E ".*,(1762|1876|2546|2670|2722|2812),(4|5),.*" ratings_h.csv
+  169  wc cinco_cuatro.csv
+  170  clear
+  171  history
+  172  clear
+  173  cd..
+  174  cd
+  175  cd Documents
+  176  mkdir MiProyecto
+  177  ls
+  178  cd MiProyecto
+  179  curl "http://files.grouplens.org/datasets/movielens/ml-1m.zip" > "C:\Users\Phrankie Garcia\Documents\MiProyecto\ml-1M.zip"
+  180  unzip ml-1M.zip
+  181  rm ml-1M.zip
+  182  ls
+  183  cp -a MiProyecto.1
+  184  cp -a MiProyecto MiProyecto.1
+  185  cd ..
+  186  ls
+  187  cp -a MiProyecto MiProyecto.1
+  188  ls
+  189  cd MiProyecto.1
+  190  ls
+  191  cd ml-1m
+  192  ls
+  193  python
+  194  cd Documents
+  195  ls
+  196  cd MiProyecto
+  197  ls
+  198  cd ml-1m
+  199  ls
+  200  history
+  201  ls
+  202  sed "s/::/,/g" users.dat > users.csv
+  203  sed "s/::/,/g" ratings.dat > ratings.csv
+  204  ls
+  205  history
