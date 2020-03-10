@@ -1,0 +1,6 @@
+1.- se descarga el archivo
+2.- se guarda en documentos(preferentemente)
+3.- en la consola del git situarnos en donde se encuentra el archivo
+4.- solo poner el nombre del archivo con su extension (.sh) y enter
+5.- el script deberia ejecutarse sin problema
+6.- checar las carpetas creadas por el script o posibles errores

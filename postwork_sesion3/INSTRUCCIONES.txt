@@ -1,0 +1,4 @@
+1.- se deben descargar los 3 archivos
+2.- situar los archivos "patient.csv" y "route.csv" en alguna ruta de su preferencia
+3.- editar el script en las lineas "LOAD DATA LOCAL INFILE" las rutas en donde se situaron los archivos
+4.- ejecutar el script en la base de datos
