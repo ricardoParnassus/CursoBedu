@@ -1,0 +1,211 @@
+$ cat .mycli-history
+
+# 2020-03-03 20:04:28.423191
++show databases;
+
+# 2020-03-03 20:05:38.124198
++create database FranciscoGarcia_DB
+
+# 2020-03-03 20:05:47.906343
++shsow databases
+
+# 2020-03-03 20:05:58.066732
++show databases
+
+# 2020-03-03 20:08:37.107305
++use FranciscoGarcia_DB
+
+# 2020-03-03 20:28:26.305447
++CREATE TABLE tbl_usuarios
++            ( id INT PRIMARY KEY,
++              genero VARCHAR(2),
++              edad INT,
++              ocupacion INT,
++              cp VARCHAR(10));
+
+# 2020-03-03 20:28:56.759090
++show tables
+
+# 2020-03-03 20:45:54.453411
++CREATE TABLE tbl_movies
++( id INT PRIMARY KEY,
++  name VARCHAR(50),
++  genero VARCHAR(50));
+
+# 2020-03-03 20:46:04.958304
++show tables
++
+
+# 2020-03-03 20:55:34.022879
++LOAD DATA LOCAL INFILE "/c/Users/Phrankie Garcia/Documents/MiProyecto/ml-1m/users.csv" INTO TABLE tbl_usuarios
+
+# 2020-03-03 21:00:06.600779
++use FranciscoGarcia_DB
+
+# 2020-03-03 21:00:10.102795
++show tables
+
+# 2020-03-03 21:01:07.850921
++LOAD DATA LOCAL INFILE "/c/Users/Phrankie Garcia/Documents/MiProyecto/ml-1m/users.csv" INTO TABLE tbl_usuarios;
+
+# 2020-03-03 21:01:31.030662
++LOAD DATA LOCAL INFILE "C:/Users/Phrankie Garcia/Documents/MiProyecto/ml-1m/users.csv" INTO TABLE tbl_usuarios;
+
+# 2020-03-03 21:02:57.808269
++select * from tbl_usuarios
+
+# 2020-03-03 21:19:08.566044
++describe table tbl_movies
+
+# 2020-03-03 21:26:15.547649
++truncate table tbl_movies
+
+# 2020-03-03 21:27:02.829105
++LOAD DATA LOCAL INFILE "C:/Users/Phrankie Garcia/Documents/MiProyecto/ml-1m/users.csv" INTO TABLE tbl_usuarios FIELDS terminated by ","
+
+# 2020-03-03 21:27:22.745736
++select * from tbl_usuarios
+
+# 2020-03-03 21:27:38.333306
++delete from tbl_usuarios
+
+# 2020-03-03 21:27:52.455605
++select * from tbl_usuarios
+
+# 2020-03-03 21:28:47.125792
++LOAD DATA LOCAL INFILE "C:/Users/Phrankie Garcia/Documents/MiProyecto/ml-1m/users.csv" INTO TABLE tbl_usuarios FIELDS terminated by ",";
+
+# 2020-03-03 21:29:50.092371
++select * from tbl_usuarios
+
+# 2020-03-03 21:32:27.468589
++LOAD DATA LOCAL INFILE "C:/Users/Phrankie Garcia/Documents/MiProyecto/ml-1m/movies.csv" INTO TABLE tbl_movies FIELDS terminated by ",";
+
+# 2020-03-03 21:32:36.911547
++select * from tbl_movies
+
+# 2020-03-03 21:39:59.522821
++select * from tbl_usuarios where id = 1
+
+# 2020-03-03 21:40:40.881723
++select * from tbl_usuarios where genero = 'F'
+
+# 2020-03-03 21:40:55.761119
++select * from tbl_usuarios where genero = 'F' limit 10
+
+# 2020-03-03 21:41:17.317971
++select * from tbl_usuarios where genero = 'F' limit 10 order by id
+
+# 2020-03-03 21:41:37.741634
++select * from tbl_usuarios where genero = 'F' order by id limit 10
+
+# 2020-03-05 19:47:46.765847
++select * from tbl_usuarios where genero = 'F' limit 10 order by id
+
+# 2020-03-05 19:48:02.357414
++select * from tbl_usuarios where genero = 'F' order by id limit 10
+
+# 2020-03-05 19:50:48.023186
++select count(*) from tbl_usuarios
+
+# 2020-03-05 19:53:11.464836
++show tables
+
+# 2020-03-05 19:55:45.583243
++select * from tbl_usuarios
+
+# 2020-03-05 19:55:55.121599
++describe tbl_usuarios
+
+# 2020-03-05 19:56:30.851851
++describe tbl_movies
+
+# 2020-03-05 19:57:01.419749
++select * from tbl_usuarios limit 10
+
+# 2020-03-05 19:59:55.751391
++select * from tbl_usuarios where edad in (4, 10, 19)
+
+# 2020-03-05 20:00:39.206830
++select * from tbl_usuarios where edad = 4 or ocupacion = 10 or ocupacion = 19
+
+# 2020-03-05 20:01:23.968022
++select * from tbl_usuarios where ocupacion in (4,10,19)
+
+# 2020-03-05 20:01:43.952956
++select count(*) from tbl_usuarios where ocupacion in (4,10,19)
+
+# 2020-03-05 20:03:36.536429
++select count(*) from tbl_usuarios where ocupacion not in (4,10,19)
+
+# 2020-03-05 20:08:46.974264
++select * from tbl_usuarios where ocupacion like "6%"
+
+# 2020-03-05 20:09:01.031185
++select (*) from tbl_usuarios where ocupacion like "6%"
+
+# 2020-03-05 20:09:16.021455
++select count(*) from tbl_usuarios where ocupacion like "6%"
+
+# 2020-03-05 20:09:35.450450
++select count(*) from tbl_usuarios where ocupacion like "06%"
+
+# 2020-03-05 20:09:48.853306
++select count(*) from tbl_usuarios where cp like "06%"
+
+# 2020-03-05 20:10:03.273996
++select * from tbl_usuarios where cp like "06%"
+
+# 2020-03-05 20:13:35.248445
++select * from tbl_usuarios where cp like "06%" or cp like "03%"
+
+# 2020-03-05 20:13:46.970356
++select * from tbl_usuarios where cp like "06%" and cp like "03%"
+
+# 2020-03-05 20:15:39.714847
++select * from tbl_usuarios
+
+# 2020-03-05 20:16:14.685747
++select * from tbl_usuarios where genero = "M"
+
+# 2020-03-05 20:16:32.166434
++select count(*) from tbl_usuarios where genero = "M"
+
+# 2020-03-05 20:20:15.497069
++select count(*) from tbl_usuarios where edad >= 18 and ocupacion in (2,20)
+
+# 2020-03-05 20:20:37.344924
++describe tbl_movies
+
+# 2020-03-05 20:20:56.567544
++select * from tbl_usuarios where edad >= 18 and ocupacion in (2,20)
+
+# 2020-03-05 20:21:10.574971
++select count(*) from tbl_usuarios where edad >= 18 and ocupacion in (2,20)
+
+# 2020-03-05 20:21:41.939794
++select * from tbl_movies where name like "%(2000)%"
+
+# 2020-03-05 20:21:58.844991
++select count(*) from tbl_movies where name like "%(2000)%"
+
+# 2020-03-05 20:25:06.391812
++select * from tbl_movies where name like "%(2000)%"
+
+# 2020-03-05 20:26:29.188694
++select count(*) from tbl_movies where name like "%(2000)%"
+
+# 2020-03-05 20:28:03.680227
++select count(*) from tbl_usuarios where edad >= 18 and ocupacion in (2,20)
+
+# 2020-03-05 20:29:13.653698
++select count(*) from tbl_movies
+
+# 2020-03-05 20:31:28.318540
++select count(*) from tbl_usuarios where edad >= 18 and ocupacion in (2,20)
+
+# 2020-03-05 20:35:40.842501
++select count(*) from tbl_movies where name like "%(2000)%"
+
+# 2020-03-05 20:52:43.803560
++history
