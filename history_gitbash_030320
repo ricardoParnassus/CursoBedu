@@ -1,3 +1,6 @@
+h
+Phrankie Garcia@DESKTOP-M6N1B4Q MINGW64 ~
+$ history
     1  pwd
     2  ls
     3  ls -l
@@ -203,3 +206,48 @@
   203  sed "s/::/,/g" ratings.dat > ratings.csv
   204  ls
   205  history
+  206  ls
+  207  head movies.csv
+  208  pwd
+  209  clear
+  210  cd
+  211  cd Documents
+  212  cd MiProyecto
+  213  cd ml-1m
+  214  ls
+  215  head movies.dat
+  216  sed "s/::/,/g" movies.dat > movies.csv
+  217  grep -a "(2000)" movies.csv | head
+  218  grep -a "(2000)" movies.csv | wc
+  219  grep -a "(2000)" movies.csv > archivo-CRITERIO.csv
+  220  ls
+  221  cd
+  222  cd Documents
+  223  mkdir MiProyecto
+  224  ls
+  225  cd MiProyecto
+  226  curl "http://files.grouplens.org/datasets/movielens/ml-1m.zip" > "C:\Users\Phrankie Garcia\Documents\MiProyecto\ml-1M.zip"
+  227  unzip ml-1M.zip
+  228  rm ml-1M.zip
+  229  ls
+  230  cd ..
+  231  ls
+  232  cp -a MiProyecto MiProyecto.1
+  233  ls
+  234  cd
+  235  cd Documents
+  236  mkdir MiProyecto
+  237  ls
+  238  cd MiProyecto
+  239  curl "http://files.grouplens.org/datasets/movielens/ml-1m.zip" > "ml-1M.zip"
+  240  unzip ml-1M.zip
+  241  rm ml-1M.zip
+  242  ls
+  243  cd ..
+  244  ls
+  245  cp -a MiProyecto MiProyecto.1
+  246  ls
+  247  history
+
+Phrankie Garcia@DESKTOP-M6N1B4Q MINGW64 ~
+$
