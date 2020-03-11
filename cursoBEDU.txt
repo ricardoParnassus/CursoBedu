@@ -1,0 +1,37 @@
+cluster mongo DB
+shell & kernel
+terminal
+
+--------------COMANDOS 
+curl
+unzip
+
+cd - change directory
+touch - crear un archivo
+pwd - print work directory
+rm - remove
+mkdir
+ls - list files in 
+clear - limpiar consola
+mv - move file
+cat - concatenar (concatena texto de n archivos)
+curl - descargar un archivo
+unzip descomprimir archivo
+grep - encontrar cosas dentro de un archivo de texto 
+
+less - Ver contenido con paginacion
+********* ["q"](tecla) salir del lector [less]
+
+tail - entrega las ultimas ilineas de un archivo
+********* tail -n /[numero de lineas que quieres][opcional] /[archivo] (C:\Users\Phrankie Garcia\Documents\cursoBD\Sesion02\ml-1m\usrs.dat)
+head - entrega las primeras lineas de un archivo
+********* head -n /[numero de lineas][opcional] /[archivo]
+
+sed - editar un archivo (reeplazar texto)
+
+SQL | GROUP BY
+GROUP BY clause is used with the SELECT statement.
+In the query, GROUP BY clause is placed after the WHERE clause.
+In the query, GROUP BY clause is placed before ORDER BY clause if used any.
+
+- changed 
