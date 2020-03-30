@@ -1,0 +1,39 @@
+Realizar una conexión desde Compass a la base de datos creada en MongoDB Atlas.
+
+---------------------------------------------------------------------------
+CLUSTER:
+mongodb+srv://Francisco:<password>@cluster0-f8h3s.mongodb.net/test?authSource=admin&replicaSet=Cluster0-shard-0&readPreference=primary&appname=MongoDB%20Compass&ssl=true
+---------------------------------------------------------------------------
+
+Analizar la estructura de los datos para conocer el contexto y poder formular preguntas.
+
+---------------------------------------------------------------------------
+COLLECCION:
+casas_en_renta
+---------------------------------------------------------------------------
+
+I) REGISTROS DE DEPARTAMENTOS QUE ACEPTAN ANIMALES 
+
+{animal : "acept"}
+
+II) REGISTROS CUALES SU CODIGO DE CIUDAD SEA 1
+
+{ city : "1"}
+
+III) REGISTROS CUALES TENGAN DOS O TRES LUGARES DE ESTACIONAMIENTO
+
+{ rooms : {$in: ['2', '3']}}
+
+IV) NUMERO DE REGISTROS POR CODIGO DE CIUDAD
+[
+  {
+    '$group': {
+      '_id': '$city', 
+      'codigo': {
+        '$sum': 1
+      }
+    }
+  }
+]
+
+

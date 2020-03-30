@@ -1,0 +1,17 @@
+Lo primero es que crear y nombrar la base de datos que usarás para tu proyecto haciendo uso de Compass, sólo que en esta ocasión los datos serán almacenados en un Cluster en la nube.
+---------------------------------------------------------------------------
+CLUSTER:
+mongodb+srv://Francisco:<password>@cluster0-f8h3s.mongodb.net/test?authSource=admin&replicaSet=Cluster0-shard-0&readPreference=primary&appname=MongoDB%20Compass&ssl=true
+---------------------------------------------------------------------------
+Después, por cada conjunto de datos nombra y crea una colección
+---------------------------------------------------------------------------
+COLLECCION:
+casas_en_renta
+---------------------------------------------------------------------------
+Importa cada conjunto de datos en la correspondiente colección
+---------------------------------------------------------------------------
+NOMBRE DEL ARCHIVO:
+house_to_rent.csv
+---------------------------------------------------------------------------
+Al final verifica que la cantidad de documentos sea la misma que la cantidad de registros en los conjuntos de datos.
+6081
